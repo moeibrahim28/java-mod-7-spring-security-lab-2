@@ -23,7 +23,7 @@ public class SecurityConfiguration {
 //                .hasAuthority("admin");
 
         http.authorizeRequests()
-            .antMatchers("/bitcoin")
+            .antMatchers("/crypto")
             .authenticated()
             .and()
             .formLogin() // change httpBasic() to oauth2Login() for API resources
