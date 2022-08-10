@@ -19,10 +19,18 @@
     ></script>
 </head>
 <body>
-<h1>Demo</h1>
+<h1>Welcome to Moe's Crypto Website</h1>
+<h2>Select an option from the dropdown menu to see its price</h2>
 <div class="container"></div>
-<a href="http://localhost:8080/crypto/bitcoin">Check BitCoin price!</a>
-<a href="http://localhost:8080/crypto/usd-coin">Check USD-COIN price!</a>
-<a href="http://localhost:8080/crypto/tether">Check Tether price!</a>
+<select name="forma" onchange="location = this.value;" style="padding: 10px; background-color:paleturquoise; border:none;">
+    <option value="http://localhost:8080/">(select an option)</option>
+    <option value="http://localhost:8080/">Home</option>
+    <option value="http://localhost:8080/crypto/bitcoin">Bitcoin</option>
+    <option value="http://localhost:8080/crypto/usd-coin">USD-COIN</option>
+    <option value="http://localhost:8080/crypto/tether">Tether</option>
+    <option value="http://localhost:8080/crypto/ethereum">Ethereum</option>
+    <option value="http://localhost:8080/crypto/cardano">Cardano</option>
+    <option value="http://localhost:8080/crypto/solana">Solana</option>
+</select>
 </body>
 </html>
